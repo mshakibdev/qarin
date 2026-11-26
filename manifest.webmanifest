@@ -1,0 +1,37 @@
+{
+ "name": "কারিন সংকলন — কারণ, লক্ষণ ও চিকিৎসা",
+ "short_name": "কারিন সংকলন",
+ "description": "কারিন বিষয়ে রুকইয়া বক্তৃতা ও লেখার বাংলা ভাষান্তর — কারণ, লক্ষণ ও চিকিৎসা। অনলাইনে ও অফলাইনে পড়ুন, PDF ও Word ডাউনলোড করুন।",
+ "lang": "bn",
+ "dir": "ltr",
+ "start_url": "/?source=pwa",
+ "scope": "/",
+ "id": "/",
+ "display": "standalone",
+ "background_color": "#f7f4ec",
+ "theme_color": "#1f4e3d",
+ "icons": [
+  {
+   "src": "/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "সম্পূর্ণ PDF",
+   "url": "/downloads/qarin-somporno-songkolon.pdf"
+  }
+ ]
+}
