@@ -1,0 +1,47 @@
+# ---- Operating system files ----
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---- Editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Vercel (created by `vercel` CLI; holds your project link) ----
+.vercel/
+
+# ---- Node (if you ever run `npx serve` or install tools) ----
+node_modules/
+npm-debug.log*
+
+# ---- Python (the generator scripts in tools/) ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- Temporary build files made by the tools ----
+tools/front.html
+tools/front.pdf
+tools/combined.md
+tools/*.docx.md
+tools/*.html.md
+tools/*.html
+tools/ref.docx
+tools/ref2.docx
+tools/*.jpg
+tools/*.png
+
+# ---- Logs and secrets ----
+*.log
+.env
+.env.*
+
+# ---- Zip downloads you copy into this folder ----
+*.zip

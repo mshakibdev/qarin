@@ -1,8 +1,8 @@
 /* Service worker — offline reading for the Qarin collection */
-const VERSION = '198a450cfb';
+const VERSION = '72d745506d';
 const CORE = 'qarin-core-' + VERSION;
 const FILES = 'qarin-files';           // PDFs / DOCX, cached when first opened
-const PRECACHE = ["/", "/a/qarin-tinti-lokkhon/", "/a/qarin-wasoasa-3-lokkhon/", "/a/qarin-sokriyotar-karon/", "/a/mathay-bipojjonok-lokkhon/", "/a/qarin-o-byarthota/", "/a/qarin-dokholer-chikitsa/", "/a/qarin-sokriyotar-karon-2/", "/a/hasader-shoytan-theke-shifa/", "/a/qarin-adhipottyer-rohosso/", "/a/qarin-dokhol-karon-lokkhon-chikitsa/", "/a/qarin-o-snayutontro/", "/404.html", "/assets/style.css?v=198a450cfb", "/assets/app.js?v=198a450cfb", "/manifest.webmanifest", "/search-index.json", "/fonts/HindSiliguri-Regular.woff2", "/fonts/HindSiliguri-SemiBold.woff2", "/fonts/HindSiliguri-Bold.woff2", "/fonts/Amiri-Regular.woff2", "/icons/icon-192.png", "/icons/icon-512.png", "/icons/favicon-48.png"];
+const PRECACHE = ["/", "/a/qarin-tinti-lokkhon/", "/a/qarin-wasoasa-3-lokkhon/", "/a/qarin-sokriyotar-karon/", "/a/mathay-bipojjonok-lokkhon/", "/a/qarin-o-byarthota/", "/a/qarin-dokholer-chikitsa/", "/a/qarin-sokriyotar-karon-2/", "/a/hasader-shoytan-theke-shifa/", "/a/qarin-adhipottyer-rohosso/", "/a/qarin-dokhol-karon-lokkhon-chikitsa/", "/a/qarin-o-snayutontro/", "/a/qariner-rohosso/", "/404.html", "/assets/style.css?v=72d745506d", "/assets/app.js?v=72d745506d", "/manifest.webmanifest", "/search-index.json", "/fonts/HindSiliguri-Regular.woff2", "/fonts/HindSiliguri-SemiBold.woff2", "/fonts/HindSiliguri-Bold.woff2", "/fonts/Amiri-Regular.woff2", "/icons/icon-192.png", "/icons/icon-512.png", "/icons/favicon-48.png"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CORE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
